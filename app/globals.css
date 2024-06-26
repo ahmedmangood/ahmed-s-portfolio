@@ -87,6 +87,6 @@
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
 }
-body {
-  overflow-x: hidden;
-}
+/* body {
+  overflow-x: clip !important;
+} */
