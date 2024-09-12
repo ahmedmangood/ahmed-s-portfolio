@@ -202,14 +202,17 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    href: "https://github.com/ahmedmangood",
   },
   {
     id: 2,
     img: "/twit.svg",
+    href: "https://x.com/ahmedmngoud7?t=T-H3ZuAV4q76oxShIEHc_g&s=09",
   },
   {
     id: 3,
     img: "/link.svg",
+    href: "https://www.linkedin.com/in/ahmed-mangood2007?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 ];
 
