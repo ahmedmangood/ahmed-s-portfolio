@@ -8,6 +8,7 @@ import { useState } from "react";
 import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import { useTranslations } from "next-intl";
 
 export const BentoGrid = ({
   className,
@@ -47,6 +48,7 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
+  const t = useTranslations("GridSection");
   const [copied, setCopied] = useState(false);
   const handleCopy = () => {
     navigator.clipboard.writeText("ahmedmangood656@gmail.com");
@@ -147,7 +149,7 @@ export const BentoGridItem = ({
                   }}
                 />
                 <MagicButton
-                  title={copied ? "Email copied" : "Copy my email"}
+                  title={copied ? t("emailisCoped") : t("emailCardBtn")}
                   icon={<IoCopyOutline className="me-2" />}
                   position="left"
                   otherClasses="!bg-[#161a31]"

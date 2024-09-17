@@ -3,22 +3,23 @@ import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 import { socialMedia } from "@/data";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export const Footer = () => {
+  const t = useTranslations("Footer");
   return (
     <footer className="w-full pt-20 pb-20" id="contact">
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
+          {t("mainTitleOne")}{" "}
+          <span className="text-purple">{t("mainTitleTwo")}</span>
         </h1>
-        <p className="text-center md:mt-10 my-5 text-white-200">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
+        <p className="text-center md:mt-10 my-5 text-white-200 rtl:text-lg">
+          {t("mainParagraph")}
         </p>
         <a href="mailto:ahmedmangood656@gmail.com">
           <MagicButton
-            title="Let's get in touch"
+            title={t("footerBtn")}
             icon={<FaLocationArrow className="ms-3" />}
             position="right"
           />

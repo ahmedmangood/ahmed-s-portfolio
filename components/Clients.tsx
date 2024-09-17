@@ -1,12 +1,42 @@
 import React from "react";
 import { InfiniteMovingCards } from "./ui/InfiniteMovingCards";
-import { companies, testimonials } from "@/data";
+import { companies } from "@/data";
+import { useTranslations } from "next-intl";
 
 export const Clients = () => {
+  const t = useTranslations("Clients");
+  const testimonials = [
+    {
+      quote: t("clientQuoteOne"),
+      name: t("clientOneName"),
+      title: t("clientOneJobTitle"),
+    },
+    {
+      quote: t("clientQuoteOne"),
+      name: t("clientOneName"),
+      title: t("clientOneJobTitle"),
+    },
+    {
+      quote: t("clientQuoteOne"),
+      name: t("clientOneName"),
+      title: t("clientOneJobTitle"),
+    },
+    {
+      quote: t("clientQuoteOne"),
+      name: t("clientOneName"),
+      title: t("clientOneJobTitle"),
+    },
+    {
+      quote: t("clientQuoteOne"),
+      name: t("clientOneName"),
+      title: t("clientOneJobTitle"),
+    },
+  ];
   return (
     <div className="py-20" id="testimonials">
       <h1 className="heading">
-        Kind words from <span className="text-purple">satisfied clients</span>
+        {t("mainTitlePartOne")}{" "}
+        <span className="text-purple">{t("mainTitlePartTwo")}</span>
       </h1>
       <div className="flex flex-col items-center justify-center mt-10">
         <InfiniteMovingCards

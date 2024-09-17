@@ -1,0 +1,82 @@
+{
+  "Navbar": {
+    "Home": "Home",
+    "About": "About",
+    "Projects": "Projects",
+    "Testimonials": "Testimonials",
+    "Contact": "Contact"
+  },
+  "HeroSection": {
+    "mainTitle": "Transforming Concepts into Seamless User Experiences",
+    "smallTitle": "Dynamic Web Magic with Next.js",
+    "paragraph": "Hi, I'am Ahmed Mangood, a Next.js Developer based in Riyadh.",
+    "buttonText": "Show my work"
+  },
+  "GridSection": {
+    "computerCardText": "I prioritize client collaboration, fostering open communication",
+    "stackCardSmallText": "I constantly try to improve",
+    "stackCardBigText": "My tech stack",
+    "globalCardText": "I'm very flexible with time zone communications",
+    "insideScoopCardsmallText": "The Inside Scoop",
+    "insideScoopCardbigText": "Currently building a JS Animation library",
+    "TechCardText": "Tech enthusiast with a passion for development.",
+    "emailCardText": "Do you want to start a project together?",
+    "emailCardBtn": "Copy my email",
+    "emailisCoped": "Email copied"
+  },
+  "RecentProjects": {
+    "recentTitlePartOne": "A small selection of",
+    "recentTitlePartTwo": "recent projects",
+    "projectOneTitle": "3D Solar System Planets to Explore",
+    "projectOneDescription": "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    "projectTwoTitle": "Yoom - Video Conferencing App",
+    "projectTwoDescription": "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    "projectThreeTitle": "AI Image SaaS - Canva Application",
+    "projectThreeDescription": "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    "projectFourTitle": "Animated Apple Iphone 3D Website",
+    "projectFourDescription": "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    "checkLiveSite": "Check Live Site"
+  },
+  "Clients": {
+    "mainTitlePartOne": "Kind words from",
+    "mainTitlePartTwo": "satisfied clients",
+    "clientQuoteOne": "Collaborating with Ahmed was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Ahmed's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Ahmed is the ideal partner.",
+    "clientOneName": "John Smith",
+    "clientOneJobTitle": "Director of AlphaStream Technologies"
+  },
+  "Experience": {
+    "mainTitlePartOne": "My ",
+    "mainTitlePartTwo": "work experience",
+    "expOneTitle": "Frontend Engineer Intern",
+    "expOneDescription": "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    "expTwoTitle": "Mobile App Dev - JSM Tech",
+    "expTwoDescription": "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    "expThreeTitle": "Freelance App Dev Project",
+    "expThreeDescription": "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    "expFourTitle": "Lead Frontend Developer",
+    "expFourDescription": "Developed and maintained user-facing features using modern frontend technologies."
+  },
+  "MyApproach": {
+    "mainTitlePartOne": "My",
+    "mainTitlePartTwo": "approach",
+    "phaseOne": "Phase One",
+    "approachOneTitle": "Planning & Strategy",
+    "approachOneDescription": "We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements.",
+    "phaseTwo": "Phase Two",
+    "approachTwoTitle": "Development & Progress Update",
+    "approachTwoDescription": "Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way.",
+    "phaseThree": "Phase Three",
+    "approachThreeTitle": "Development & Launch",
+    "approachThreeDescription": "This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up."
+  },
+  "Footer": {
+    "mainTitleOne": "Ready to take your digital presence to ",
+    "mainTitleTwo": "the next level?",
+    "mainParagraph": "Reach out to me today and let's discuss how I can help you achieve your goals.",
+    "footerBtn": "Let's get in touch"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, ar {🇸🇦 Arabic} en {🇺🇸 English} other {Unknown}}"
+  }
+}

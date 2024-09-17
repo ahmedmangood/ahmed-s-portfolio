@@ -1,14 +1,58 @@
-import { projects } from "@/data";
-import React from "react";
 import { PinContainer } from "./ui/3DPin";
 import { FaLocationArrow } from "react-icons/fa";
+import { useTranslations } from "next-intl";
 
 const RecentProjects = () => {
+  const t = useTranslations("RecentProjects");
+  const projects = [
+    {
+      id: 1,
+      title: t("projectOneTitle"),
+      slug: "Solar",
+      des: t("projectOneDescription"),
+      img: "/p1.svg",
+      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+      link: "#",
+    },
+    {
+      id: 2,
+      title: t("projectTwoTitle"),
+      slug: "Yoom",
+      des: t("projectTwoDescription"),
+      img: "/p2.svg",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+      link: "#",
+    },
+    {
+      id: 3,
+      title: t("projectThreeTitle"),
+      slug: "SaaS",
+      des: t("projectThreeDescription"),
+      img: "/p3.svg",
+      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+      link: "#",
+    },
+    {
+      id: 4,
+      title: t("projectFourTitle"),
+      slug: "Iphone",
+      des: t("projectFourDescription"),
+      img: "/p4.svg",
+      iconLists: [
+        "/next.svg",
+        "/tail.svg",
+        "/ts.svg",
+        "/three.svg",
+        "/gsap.svg",
+      ],
+      link: "#",
+    },
+  ];
   return (
     <div className="py-20" id="projects">
       <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+        {t("recentTitlePartOne")}{" "}
+        <span className="text-purple">{t("recentTitlePartTwo")}</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-20">
         {projects.map(({ id, title, slug, des, img, iconLists, link }) => (
@@ -43,7 +87,7 @@ const RecentProjects = () => {
                 </div>
                 <div className="flex justify-center items-center">
                   <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
+                    {t("checkLiveSite")}
                   </p>
                   <FaLocationArrow className="ms-3" />
                 </div>

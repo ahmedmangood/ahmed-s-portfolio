@@ -3,8 +3,10 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
+  const t = useTranslations("HeroSection");
   return (
     <div className="pb-20 pt-36">
       {/* <Spotlight
@@ -20,18 +22,17 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
+            {t("smallTitle")}
           </h2>
           <TextGenerateEffect
             className="text-center"
-            words="Transforming Concepts into Seamless User Experiences"
+            // words="Transforming Concepts into Seamless User Experiences"
+            words={`${t("mainTitle")}`}
           />
-          <p className="text-center my-5 text-xl">
-            Hi, I&apos;am Ahmed Mangood, a Next.js Developer based in Riyadh.
-          </p>
+          <p className="text-center my-5 text-xl">{t("paragraph")}.</p>
           <a href="#about">
             <MagicButton
-              title="Show my work"
+              title={t("buttonText")}
               icon={<FaLocationArrow />}
               position="right"
               otherClasses="gap-2 hover:bg-white hover:text-black transition-all"

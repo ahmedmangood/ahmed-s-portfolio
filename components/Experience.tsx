@@ -1,12 +1,45 @@
-import { workExperience } from "@/data";
-import React from "react";
+import { useTranslations } from "next-intl";
 import { Button } from "./ui/MovingBorder";
 
 export const Experience = () => {
+  const t = useTranslations("Experience");
+
+  const workExperience = [
+    {
+      id: 1,
+      title: t("expOneTitle"),
+      desc: t("expOneDescription"),
+      className: "md:col-span-2",
+      thumbnail: "/exp1.svg",
+    },
+    {
+      id: 2,
+      title: t("expTwoTitle"),
+      desc: t("expTwoDescription"),
+      className: "md:col-span-2", // change to md:col-span-2
+      thumbnail: "/exp2.svg",
+    },
+    {
+      id: 3,
+      title: t("expThreeTitle"),
+      desc: t("expThreeDescription"),
+      className: "md:col-span-2", // change to md:col-span-2
+      thumbnail: "/exp3.svg",
+    },
+    {
+      id: 4,
+      title: t("expFourTitle"),
+      desc: t("expFourDescription"),
+      className: "md:col-span-2",
+      thumbnail: "/exp4.svg",
+    },
+  ];
+
   return (
     <div className="py-20" id="testimonials">
       <h1 className="heading">
-        My <span className="text-purple">work experience</span>
+        {t("mainTitlePartOne")}{" "}
+        <span className="text-purple">{t("mainTitlePartTwo")}</span>
       </h1>
 
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
