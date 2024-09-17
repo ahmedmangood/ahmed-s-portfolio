@@ -99,13 +99,21 @@ export const BentoGridItem = ({
             titleClassName,
             `group-hover/bento:translate-x-3 transition duration-200 relative md:h-full min-h-40 ${
               id === 1 && "lg:min-h-[30rem]"
-            } flex flex-col px-5 p-5 lg:p-10`
+            } flex flex-col px-5 p-5 lg:p-10 ${
+              id === 5 && "rtl:justify-start"
+            } `
           )}
         >
-          <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
+          <div
+            className={`font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10`}
+          >
             {description}
           </div>
-          <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
+          <div
+            className={`font-sans font-bold text-lg lg:text-3xl max-w-96 z-10 ${
+              id === 3 && "rtl:text-end"
+            }`}
+          >
             {title}
           </div>
           {id === 2 && <GlobeDemo />}
@@ -115,7 +123,7 @@ export const BentoGridItem = ({
                 {skillsItemsOne.map((item, index) => (
                   <span
                     key={index}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-60 rounded-lg text-center bg-[#10132E]"
+                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-60 rounded-lg text-center bg-[#10132E] "
                   >
                     {item}
                   </span>
@@ -127,7 +135,7 @@ export const BentoGridItem = ({
                 {skillsItemsTwo.map((item, index) => (
                   <span
                     key={index}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-60 rounded-lg text-center bg-[#10132E]"
+                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-60 rounded-lg text-center bg-[#10132e]"
                   >
                     {item}
                   </span>
@@ -135,6 +143,7 @@ export const BentoGridItem = ({
               </div>
             </div>
           )}
+          {/* Email Card */}
           {id === 6 && (
             <div className="mt-10 md:mt-20 relative">
               <div className={`absolute -bottom-5 right-0`}>
